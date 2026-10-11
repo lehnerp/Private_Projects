@@ -26,16 +26,19 @@ The dashboard displays alarms, observations, endpoint health, email statistics, 
 
 ## 2. Nearby Events Alert System
 
-The project helps users stay informed about emergency incidents in the specified Region.
-It regularly checks public incident information published by the fire and rescue service.
-Users can focus alerts on selected towns, neighbourhoods, or streets.
-Email notifications bring new incidents in those areas to their attention.
-Each notification summarises the incident and its reported location.
-A web dashboard brings current incidents and their history together in one place.
-Search and filters help users find relevant information quickly.
-Maps and charts provide a clearer overview of incident locations and activity.
-Users can mark incidents as reviewed, close them, or reopen them as needed.
-The project reduces the need for manual checking and supports awareness of local emergencies.
+A system that helps users stay informed about emergency incidents in a selected region. It reduces the need for manual checking and supports awareness of local emergencies.
+
+**Monitoring and alerts**
+
+The system regularly checks public incident information published by the fire and rescue service. Users can focus alerts on selected towns, neighbourhoods, or streets.
+
+Email notifications highlight new incidents in those areas. Each notification summarises the incident and its reported location.
+
+**Dashboard and overview**
+
+A web dashboard brings current incidents and their history together in one place. Search and filters help users find relevant information quickly.
+
+Maps and charts provide an overview of incident locations and activity. Users can mark incidents as reviewed, close them, or reopen them as needed.
 
 ## 3. The Entra Analysis Suite
 
