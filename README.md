@@ -2,8 +2,18 @@
 Projects that are (and will be) private by their nature.
 
 1) Agregated Advanced Monitoring System of Technological Background
-   Monitoring of values, states, alerts of various things (HVAC, AC, ESS, lights, energy) primarily for diagnostic purposes ...
-   Some of them are/were implemented for a long-term monitoring (API (Text, JSON, ...) -> Zabbix -> Grafana), others were based on Python Flask Dashboards with use of scraping, parsers and graphs.
+   
+   An aggregated system for monitoring values, equipment states, and alerts across HVAC, air conditioning, ESS, lighting, and energy systems, primarily for diagnostic purposes.
+   Some components support or previously supported long-term monitoring through an API → Zabbix → Grafana pipeline.
+   Others use Python Flask dashboards with scraping, source-specific parsers, and graphical views.
+   The consolidated application runs from a single Python file and provides one local-network dashboard with separate sections for each watcher.
+   Each watcher preserves its own endpoints, polling intervals, data mappings, and alert rules, while similar alarm watchers share common logic.
+   Monitoring includes environmental measurements, diagnostic signals, BMS alarm lifecycles, and selected access-control events, with selected values forwarded to ThingSpeak.
+   Alerts are delivered through a shared SMTP relay as modern HTML emails with plain-text fallbacks.
+   After three consecutive failures, the affected endpoint pauses for 24 hours before retrying automatically, while other endpoints continue monitoring.
+   The dashboard displays alarms, observations, endpoint health, email statistics, and pause or retry times.
+   Persistent state supports event tracking and reduces duplicate notifications, while endpoint pause timers reset when the application restarts.
+
 
 3) Nearby Events Alert System
    Monitoring of nearby incidents, alerting if in nearby radius.
