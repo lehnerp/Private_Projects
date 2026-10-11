@@ -14,7 +14,7 @@ The consolidated application runs from a single Python file and provides one loc
 
 **Data and alerts**
 
-Monitoring includes environmental measurements, diagnostic signals, BMS alarm lifecycles, and selected access-control events. Selected values are forwarded to ThingSpeak.
+Monitoring includes environmental measurements, diagnostic signals, alarm lifecycles, and selected access-control events. Selected values are forwarded to ThingSpeak.
 
 Alerts are delivered through a shared SMTP relay as modern HTML emails with plain-text fallbacks.
 
